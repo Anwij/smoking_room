@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Сообщения{% endblock %}
+{% block content %}
+    {%  verbatim %}
+    <form method="post" action="">
+        <input type="text">
+        <input type="submit" value="Отправить">
+    </form>
+
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#vue',
+            data: {
+                message: 'message',
+                first: '1',
+                second: '2'
+            }
+        })
+    </script>
+    {% endverbatim %}
+{% endblock %}
